@@ -41,7 +41,11 @@ app.set('views', path.join(__dirname, '/views'));
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-  res.render('studentgrades.ejs', {title: 'Code for Good'})
+  res.render('home_page.ejs', {title: 'Code for Good'})
+})
+
+app.get('/index.ejs', function (req, res) {
+  res.render('index.ejs', {title: 'Code for Good'})
 })
 
 

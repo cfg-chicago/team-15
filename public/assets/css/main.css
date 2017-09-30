@@ -580,6 +580,22 @@
 			margin-left: 0;
 		}
 
+		.topnav_unique {
+		    background-color: black;
+		    overflow: hidden;
+		}
+
+		/* Style the links inside the navigation bar */
+		.topnav_unique a {
+		    float: left;
+		    display: block;
+		    color: black;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		    font-size: 17px;
+		}
+
 		.\38 u\28xlarge\29, .\38 u\24\28xlarge\29 {
 			width: 66.6666666667%;
 			clear: none;
@@ -3736,7 +3752,18 @@
 			}
 
 		}
-
+		div.form
+		{
+		    display: block;
+		    text-align: center
+		}
+		form
+		{
+		    display: inline-block;
+		    margin-left: auto;
+		    margin-right: auto;
+		    text-align: left;
+		}
 		input
 		{
 			margin-left: auto;
