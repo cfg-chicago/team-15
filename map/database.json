@@ -23,17 +23,22 @@
             "milestones" : [ {
               "completed" : true,
               "image" : "",
-              "title" : "personal logo"
+              "title" : "personal logo"  
             } ],
-            "name" : "Jacob"
+            "name" : "Jacob",
+            "journal": [" ", " "]
           }, {
-            "name" : "Zacky"
+            "name" : "Zacky",
+            "journal": [" ", " "]
           }, {
-            "name" : "Zach"
+            "name" : "Zach",
+            "journal": [" ", " "]
           }, {
-            "name" : "Pablo"
+            "name" : "Pablo",
+            "journal": [" ", " "]
           }, {
-            "name" : "Anya"
+            "name" : "Anya",
+            "journal": [" ", " "]
           } ]
     }
 }
