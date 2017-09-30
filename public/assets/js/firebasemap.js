@@ -36,14 +36,14 @@ function geocodeAddress(geocoder, address, map) {
     });
 }
 
-// function addToFirebase(data) {
-//   getTimestamp(function(timestamp) {
-//     // Add the new timestamp to the record data.
-//     data.timestamp = timestamp;
-//     var ref = firebase.child('clicks').push(data, function(err) {
-//       if (err) {  // Data was not written to firebase.
-//         console.log(err);
-//       }
-//     });
-//   });
-// }
+function addToFirebase(address, name) {
+    //get current date
+    var d = new Date();
+    var n = d.toISOString();
+    dat = {"address": address, "name": name, "time_data": n}
+    var ref = firebase.database.ref('team-15/maps/locations').push(data, function(err) {
+      if (err) {  // Data was not written to firebase.
+        console.log(err);
+    }
+  });
+}
