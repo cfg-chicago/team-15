@@ -4,7 +4,10 @@
       "address" : "10 S Dearborn St, Chicago, IL 60603",
       "name" : "large building",
       "time_data" : "2017-09-29"
-    } ]
+    },
+    { "address" : "5801 S Ellis Ave, Chicago, IL, 60637",
+      "name" : "University of Chicago",
+      "time_data" : "2017-09-29"} ]
   },
   "mentors" : [ {
     "name" : "Kenneth"
