@@ -41,7 +41,7 @@ function getTicketNum(studentNum) {
 	var query = firebase.database().ref(team + "/students/" + studentNum + "/tickets");
 	query.once("value").then(function(snapshot) {
         tickets = snapshot.val();
-		document.getElementById('tickets').innerHTML = "tickets:" + tickets;
+		document.getElementById('tickets').innerHTML = "Tickets:" + tickets;
   });
   	return tickets;
 }
