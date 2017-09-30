@@ -1,14 +1,40 @@
 const express = require('express')
 const path = require('path')
-
+const admin = require('firebase-admin')
 const app = express()
+const serviceAccount = require('./codeforgood15-firebase-adminsdk-crr73-f0da8dd9d2.json')
+var ToneAnalyzerV3 = require('watson-developer-cloud/tone-analyzer/v3');
+var tone_analyzer = new ToneAnalyzerV3({
+  username: '96f3c9de-87a8-40d4-b275-953443eb8c0d',
+  password: 'HXp3a5vWALXH',
+  version_date: '2017-09-21'
+});
 
-// var ToneAnalyzerV3 = require('watson-developer-cloud/tone-analyzer/v3');
-// var tone_analyzer = new ToneAnalyzerV3({
-//   username: '{username}',
-//   password: '{password}',
-//   version_date: '{version}'
-// });
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://codeforgood15.firebaseio.com"
+});
+
+var db = admin.database();
+var entryToUse;
+db.ref('team-15/students/0/journals/0').once('value',function(snapshot){
+	const journal = snapshot.val();
+	const entry = journal.entry;
+	entryToUse = entry;
+	var params = {
+  // Get the text from the JSON file.
+	  text: entryToUse,
+	  tones: ['emotion', 'language', 'social']
+	};
+
+	tone_analyzer.tone(params, function(error, response) {
+	  if (error)
+	    console.log('error:', error);
+	  else
+	    console.log(JSON.stringify(response, null, 2));
+	  }
+	);
+});
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
@@ -19,19 +45,7 @@ app.get('/', function (req, res) {
 })
 
 
-// var params = {
-//   // Get the text from the JSON file.
-//   text: require('tone.json').text,
-//   tones: ['emotion', 'language', 'social']
-// };
 
-// tone_analyzer.tone(params, function(error, response) {
-//   if (error)
-//     console.log('error:', error);
-//   else
-//     console.log(JSON.stringify(response, null, 2));
-//   }
-// );
 
 
 app.listen(3000, function () {
