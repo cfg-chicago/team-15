@@ -18,7 +18,6 @@ function initMap() {
       var locations = snapshot.val()
       for (i =0; i < locations.length; i++) {
           var lat_long = geocodeAddress(geocoder, locations[i].address, map);
-          console.log(lat_long);
     }
 });
 }
@@ -26,6 +25,7 @@ function initMap() {
 function geocodeAddress(geocoder, address, map) {
     geocoder.geocode({'address' :address}, function(results, status){
       if (status === 'OK') {
+          console.log({lat: results[0].geometry.location.lat(), lng: results[0].geometry.location.lng()})
           var marker = new google.maps.Marker({
               position: {lat: results[0].geometry.location.lat(), lng: results[0].geometry.location.lng()},
               map: map});
@@ -35,3 +35,15 @@ function geocodeAddress(geocoder, address, map) {
       }
     });
 }
+
+// function addToFirebase(data) {
+//   getTimestamp(function(timestamp) {
+//     // Add the new timestamp to the record data.
+//     data.timestamp = timestamp;
+//     var ref = firebase.child('clicks').push(data, function(err) {
+//       if (err) {  // Data was not written to firebase.
+//         console.log(err);
+//       }
+//     });
+//   });
+// }
