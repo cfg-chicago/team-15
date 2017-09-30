@@ -35,4 +35,22 @@ function getJournals(){
 	});
 }
 
+function getTicketNum(studentNum) {
+	var team = "team-15";
+	var query = firebase.database.ref.(team + "/students/" + studentNum + "/tickets");
+	query.once("value").then(function(snapshot) {
+        var tickets = snapshot.val();
+		tickets.innerHTML= tickets;
+		return tickets
+  });
+}
+
+function addTickets(studentNum) {
+	var tickets = getTicketNum(studentNum);
+	var query = firebase.database.ref.(team + "/students/" + studentNum + "/tickets");
+	query.set(tickets + 100)
+}
+
+
 getJournals();
+getTickNum(0);
