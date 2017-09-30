@@ -1,10 +1,28 @@
+   <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGdEYeNvtNYUvDOGoMjLqt4r7T8B5S_Lg&callback=initMap">
+    </script>
+
 <style>
 	.page2-section {border: 1px solid black; width: 50%; height: 50%; position: relative;}
 	.page2-section > h2 {
 		color: rgba(0,0,0,0.4);
 		font-size: 1em;
 		position: absolute;
-		left: 8px;
+		left: 20%;
+		z-index: 4;
 		top: 8px;
 	}
 
@@ -42,12 +60,25 @@
 		height: 1px;
 		width: 70%;
 		align-items: flex-end;
+		position: relative;
 	}
 
 	.choose-new-photos > img {
 		height: 70%;
 		margin: 8px;
 		width: auto;
+	}
+
+	.choose-new-photos > h2 {
+		color: rgba(0,0,0,0.4);
+		font-size: 1em;
+		position: absolute;
+		left: 8px;
+		top: 8px;
+	}
+
+	#map {
+		height: 100%;
 	}
 </style>
 
@@ -63,6 +94,7 @@
 
 		</div>
 		<div class="choose-new-photos">
+			<h2>Choose new photos</h2>
 			<img src="http://lorempixel.com/200/200"/>
 			<img src="http://lorempixel.com/200/200"/>
 			<img src="http://lorempixel.com/200/200"/>
@@ -73,6 +105,7 @@
 	</div>
 
 	<div class="page2-section"><h2>Journal</h2></div>
-	<div class="page2-section"><h2>Field Trips</h2></div>
+	<div class="page2-section"><h2>Field Trips</h2>
+	<div id="map"></div></div>
 	<div class="page2-section"><h2>Milestones</h2></div>
 </div>
