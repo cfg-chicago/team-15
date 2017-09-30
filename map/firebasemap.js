@@ -1,7 +1,7 @@
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 0, lng: 0},
-    zoom: 3,
+    center: {lat: 41.8781, lng: -87.6298},
+    zoom: 10,
     styles: [{
       featureType: 'poi',
       stylers: [{ visibility: 'off' }]  // Turn off points of interest.
@@ -37,7 +37,7 @@ function makeInfoBox(controlDiv, map) {
 
   // Create the DIV to hold the control and call the makeInfoBox() constructor
   // passing in this DIV.
-  var infoBoxDiv = document.createElement('div');
-  var infoBox = new makeInfoBox(infoBoxDiv, map);
-  infoBoxDiv.index = 1;
-  map.controls[google.maps.ControlPosition.TOP_CENTER].push(infoBoxDiv);
+  // var infoBoxDiv = document.createElement('div');
+  // var infoBox = new makeInfoBox(infoBoxDiv, map);
+  // infoBoxDiv.index = 1;
+  // map.controls[google.maps.ControlPosition.TOP_CENTER].push(infoBoxDiv);
