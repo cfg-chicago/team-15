@@ -1,0 +1,48 @@
+<html>
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <head>
+        <title><%= title %></title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+
+<body>
+    <!-- Header -->
+        <header id="header">
+            <h1><a href="#">WFF Personal Login</a></h1>
+        </header>
+    <br>
+    <br>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input id="name" type="text" placeholder="name" style="width: 30%;"/>
+                <input type="password" placeholder="password" style="width: 30%;"/>
+                <button id="clickMe">create</button>
+                <script>
+                    function sayHello() {
+                        console.log(document.getElementById("name"))
+                    }
+                    document.getElementById("clickMe").onclick = sayHello;</script>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+            <form class="login-form">
+                <input type="text" placeholder="username" style="width: 30%;"/>
+                <input type="password" placeholder="password" style="width: 30%;"/>
+                <button>login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+</body>

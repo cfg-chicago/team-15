@@ -4,36 +4,92 @@
             "locations" : [ {
               "address" : "10 S Dearborn St, Chicago, IL 60603",
               "name" : "large building",
-              "time_data" : "2017-09-29"
-            },
+              "time_data" : "2017-01-29"},
             { "address" : "5801 S Ellis Ave, Chicago, IL, 60637",
               "name" : "University of Chicago",
-              "time_data" : "2017-09-29"},
+              "time_data" : "2017-02-29"},
             { "address" : "1401 S. Sacramento Dr, Chicago, IL 60623",
             "name" : "Douglas Park",
-            "time_data" : "2017-09-29"},
+            "time_data" : "2017-03-29"},
             { "address" : "633 Clark St, Evanston, IL 60208",
             "name" : "Northwestern",
-            "time_data" : "2017-09-29"} ]
+            "time_data" : "2017-04-29"},
+            { "address" : "600 E Grand Ave, Chicago, IL, 60611",
+            "name" : "Navy Pier",
+            "time_data" : "2017-05-29"},
+            { "address" : "131 N Clinton St, Chicago, IL 60661",
+            "name" : "Chicago French Market",
+            "time_data" : "2017-06-29"},
+            { "address" : "875 Michigan Avenue, Chicago, IL 60611",
+            "name" : "Northwestern",
+            "time_data" : "2017-07-29"},
+            { "address" : "2168 S Archer Ave, Chicago, IL 60616",
+            "name" : "Chinatown",
+            "time_data" : "2017-08-29"},
+            { "address" : "1060 W Addison St, Chicago, IL 60613",
+            "name" : "Wrigley Field",
+            "time_data" : "2017-09-29"},
+            { "address" : "333 W 35th St, Chicago, IL 606168",
+            "name" : "Guranteed Rate",
+            "time_data" : "2017-10-29"},
+            { "address" : "1200 S Lake Shore Dr, Chicago, IL 60605",
+            "name" : "Shedd Aquarium",
+            "time_data" : "2017-11-29"},
+            { "address" : "1410 Museum Campus Dr, Chicago, IL 6060",
+            "name" : "Soldier Field",
+            "time_data" : "2017-12-29"}]
           },
           "mentors" : [ {
             "name" : "Kenneth"
           } ],
-          "students" : [ {
-            "milestones" : [ {
-              "completed" : true,
-              "image" : "",
-              "title" : "personal logo"
-            } ],
-            "name" : "Jacob"
+          "media" : ["https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2Fpitchinlogo.png?alt=media&token=1cc62f63-0fa8-485d-bb34-9f49d3566a28",
+              "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2Fpp1.jpg?alt=media&token=2675c7b1-2b7d-4106-bd71-4157c39621e0",
+              "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2Fpp2.jpg?alt=media&token=b7f692af-0acc-494a-99d3-2253c4e2413b",
+              "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2Fpp3.jpg?alt=media&token=2334d57d-1230-4ed1-b72d-304968cf357d",
+              "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2Fwoodlogo.png?alt=media&token=491fd680-8cc2-4fe1-8e0a-60e6ac2fddd4",
+              "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FBaseball-Clinic-BBQ-0007-1.jpg?alt=media&token=9197dd5c-caef-4a11-b407-e55fda7be579",
+              "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_0177.jpg?alt=media&token=9168588b-3cf6-428d-baaa-8a0e3c5c4552",
+              "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_1074.jpg?alt=media&token=53f0565a-68c1-4220-a633-55a3b827caa4",
+              "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FIMG_4613.jpg?alt=media&token=14d68a63-98c0-40af-8511-372d9f6ffb15",
+              "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FIMG_4613.jpg?alt=media&token=14d68a63-98c0-40af-8511-372d9f6ffb15",
+              "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FIMG_4613.jpg?alt=media&token=14d68a63-98c0-40af-8511-372d9f6ffb15"],
+          
+          "students" : [ 
+          { "name" : "Jacob",
+            "journals": [
+            {"entry" : "What a busy day today! I never had a moment’s rest.  The day started with my alarm clock blaring at 7am.  I had to be at the Smith’s house by 8am to baby-sit. I really didn’t want to wake up so early on a Saturday, but I’m saving money to buy a new iPod and couldn’t say no to an all-day babysitting job.",
+             "date" : "2017-09-28"},
+             {"entry" : "Wow what a bad day, i never want to go back to school. It's too bad that my friend left.",
+             "date" : "2017-09-29"}]
           }, {
-            "name" : "Zacky"
+            "name" : "Zacky",
+            "journals": [
+            {"entry" : "Today was great I love the fourth grade",
+             "date" : "2017-09-28"},
+             {"entry" : "this is journal entry two, i am so sad my sentiment is negative!",
+             "date" : "2017-09-29"}]
           }, {
-            "name" : "Zach"
+            "name" : "Zach",
+            "journals": [
+            {"entry" : "I love to code but I am very tired",
+             "date" : "2017-09-28"},
+             {"entry" : "this is journal entry two, i am so sad my sentiment is negative!",
+             "date" : "2017-09-29"}]
           }, {
-            "name" : "Pablo"
+            "name" : "Pablo",
+            "journals": [
+            {"entry" : "this is where you enter a journal text",
+             "date" : "2017-09-28"},
+             {"entry" : "this is journal entry two, i am so sad my sentiment is negative!",
+             "date" : "2017-09-29"}]
           }, {
-            "name" : "Anya"
+            "name" : "Anya",
+            "journals": [
+            {"entry" : "this is where you enter a journal text",
+             "date" : "2017-09-28"},
+             {"entry" : "this is journal entry two, i am so sad my sentiment is negative!",
+             "date" : "2017-09-29"}]
           } ]
     }
+
 }
