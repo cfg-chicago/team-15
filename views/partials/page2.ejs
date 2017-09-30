@@ -44,7 +44,7 @@
 		margin: 0 15%;
 		display: flex;
 		flex-direction: row;
-		/*overflow-x: scroll;*/
+		overflow-x: scroll;
 		height: 1px;
 		width: 70%;
 		align-items: flex-end;
@@ -118,6 +118,8 @@
 <script type="text/javascript">
 	     (function defer() {
 		if (window.jQuery) {
+				$('#savebutton').click(setStudentImages);
+
 			    $('.new-photo').click(function(e){
 				console.log('clicked');
 				const selected = e.target.getAttribute('selected');
@@ -140,10 +142,6 @@
 		</div>
 		<div class="choose-new-photos">
 			<h2>Choose new photos</h2>
-			<img class="new-photo" src="http://lorempixel.com/200/200"/>
-			<img class="new-photo" src="http://lorempixel.com/200/200"/>
-			<img class="new-photo" src="http://lorempixel.com/200/200"/>
-			<img class="new-photo" src="http://lorempixel.com/200/200"/>
 		</div>
 		<button id="savebutton">Save</button>
 	</div>
