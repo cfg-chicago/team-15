@@ -13,7 +13,7 @@
 	<body>
 
 		<!-- Header -->
-			<header id="header">
+			<!-- <header id="header">
 				<h1><a href="#">Pitch In</a></h1>
 				<%- include partials/nav.ejs %>
 				<ul class="topnav_unique">
@@ -22,9 +22,15 @@
 		 			<li><a href="/mentors">Mentors</a></li>
 					<li><a href="/studentgrades">Grade Levels</a></li>
 				</ul>
-			</header>
+			</header> -->
+			<div class="topnav" id="myTopnav" style>
+				<a>Pitch In</a>
+  				<a href="/">Home</a>
+  				<a href="/studentgrades.ejs">Year</a>
+  				<a href="/mentors.ejs">Team</a>
+			</div>
 
-			<div style="width: 100%; height: calc(100vh - 45px); margin-top: 3.25em;">
+			<div style="width: 100%; height: calc(100vh); margin-top: 3.25em;">
 				<%- include partials/page2.ejs %>
 			</div>
 

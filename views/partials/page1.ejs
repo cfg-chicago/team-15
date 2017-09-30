@@ -1,31 +1,53 @@
 <style>
-	.page1-section {border: 1px solid black; width: 50%; height: 33%; position: relative;}
-	.page1-section > h2 {
-		color: rgba(0,0,0,0.4);
-		font-size: 1em;
-		position: absolute;
-		left: 20%;
-		z-index: 4;
-		top: 8px;
-	}
+.page1-section {border: 1px solid black; width: 50%; height: 33%; position: relative;}
+.page1-section > button {
+  color: rgba(0,0,0,0.4);
+  font-size: 2em;
+  position: absolute;
+	width: 100%;
+	height: 100%;
+  z-index: 4;
+  top: 8px;
+}
 
-	label {
-		display: inline;
-		color: black;
-	}
+.page8-section {border: 1px solid black; width: 100%; height: 33%; position: relative;}
+.page8-section > button {
+  color: rgba(0,0,0,0.4);
+  font-size: 2em;
+  position: absolute;
+	width: 100%;
+	height: 100%;
+  z-index: 4;
+  top: 8px;
+}
 
-	.item {
-		width: 30%;
-		margin-left: 10px;
+label {
+	display: inline;
+	color: black;
+}
 
-	}
+.item {
+	width: 30%;
+	margin-left: 10px;
 
-
+}
 </style>
+
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; height: 100%; background: white;">
-	<div class="page1-section"><h2>4th Grade</h2></div>
-		<div class="page1-section"><h2>5th Grade</h2></div>
-			<div class="page1-section"><h2>6th Grade</h2></div>
-      	<div class="page1-section"><h2>7th Grade</h2></div>
-        	<div class="page1-section"><h2>8th Grade</h2></div>
+	<div class="page1-section">
+		<button onclick="javascript:alert('4th grade');">4th Grade</button>
+  	<button type="button" onclick="window.location.href='/index.ejs'">4th Grade</button>
+	</div>
+	<div class="page1-section">
+		<button type="button">5th Grade</button>
+	</div>
+	<div class="page1-section">
+		<button type="button">6th Grade</button>
+	</div>
+	<div class="page1-section">
+		<button type="button">7th Grade</button>
+	</div>
+	<div class="page8-section">
+		<button type="button">8th Grade</button>
+	</div>
 </div>

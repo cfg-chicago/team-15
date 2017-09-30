@@ -34,5 +34,32 @@ function getJournals(){
 		}
 	});
 }
+//gets the number of tickets a student has from firebase
+function getTicketNum(studentNum) {
+	var tickets;
+	var team = "team-15";
+	var query = firebase.database().ref(team + "/students/" + studentNum + "/tickets");
+	query.once("value").then(function(snapshot) {
+        tickets = snapshot.val();
+		document.getElementById('tickets').innerHTML = "tickets:" + tickets;
+  });
+  	return tickets;
+}
+//updates a students ticket number when he/she interacts with the site
+function addTickets(studentNum) {
+	var team = "team-15";
+	var query = firebase.database().ref(team + "/students/" + studentNum + "/tickets");
+	var tickets = query.once("value").then(function(snapshot){
+		var tickets = snapshot.val();
+		query.set(tickets + 100);
+		location.reload()
+	})
+}
+
+function teamTickets(team) {
+
+}
+
 
 getJournals();
+getTicketNum(0);
