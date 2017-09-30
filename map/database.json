@@ -1,6 +1,8 @@
 {
     "team-15": {
           "map" : {
+            //a running list of locations visited by the students through the program
+            //works with google maps API, placing markers at each specified location
             "locations" : [ {
               "address" : "10 S Dearborn St, Chicago, IL 60603",
               "name" : "large building",
@@ -39,8 +41,9 @@
             "name" : "Soldier Field",
             "time_data" : "2017-12-29"}]
           },
+          //a list of mentors, here we only reference
           "mentors" : [ {
-            "name" : "Kenneth"
+            "name" : "Kenneth"  //the mentor's name, in comparison mentors have much fewer fields than students
           } ],
           "media" : ["https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2Fpitchinlogo.png?alt=media&token=1cc62f63-0fa8-485d-bb34-9f49d3566a28",
               "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2Fpp1.jpg?alt=media&token=2675c7b1-2b7d-4106-bd71-4157c39621e0",
@@ -52,16 +55,19 @@
               "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_1074.jpg?alt=media&token=53f0565a-68c1-4220-a633-55a3b827caa4",
               "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FIMG_4613.jpg?alt=media&token=14d68a63-98c0-40af-8511-372d9f6ffb15"],
 
+          //a list of students, along with their journal entries and dates of journal entries
           "students" : [
-          { "name" : "Jacob",
-            "team": "team-15",
+          { "name" : "Jacob",     //first name of student
+            "team": "team-15",    //team represents the 2 mentor : 4 mentee groups that program is divided into
             "media": ["https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FBaseball-Clinic-BBQ-0007-1.jpg?alt=media&token=9197dd5c-caef-4a11-b407-e55fda7be579",
             "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_0177.jpg?alt=media&token=9168588b-3cf6-428d-baaa-8a0e3c5c4552",
             "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_1074.jpg?alt=media&token=53f0565a-68c1-4220-a633-55a3b827caa4",
             "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FIMG_4613.jpg?alt=media&token=14d68a63-98c0-40af-8511-372d9f6ffb15"],
             "journals": [
+            //first journal entry by date
             {"entry" : "What a busy day today! I never had a moment’s rest.  The day started with my alarm clock blaring at 7am.  I had to be at the Smith’s house by 8am to baby-sit. I really didn’t want to wake up so early on a Saturday, but I’m saving money to buy a new iPod and couldn’t say no to an all-day babysitting job.",
              "date" : "2017-09-28"},
+             //second journal entry by date
              {"entry" : "Wow what a bad day, i never want to go back to school. It's too bad that my friend left.",
              "date" : "2017-09-29"}]
           }, {
@@ -108,7 +114,7 @@
             "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_1074.jpg?alt=media&token=53f0565a-68c1-4220-a633-55a3b827caa4",
             "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FIMG_4613.jpg?alt=media&token=14d68a63-98c0-40af-8511-372d9f6ffb15"],
             "journals": [
-            {"entry" : "I hate this program…. Why’d my mom make me do this? Why are they making me write these stupid journals? I’m never going to look back at these. I could spend an hour and a half so much better in any other way. My mentor sucks and I don’t like him. I don’t like the other kids in the program either. I just want to go home and watch cartoons. ",
+            {"entry" : "I hate this program…. Why’d my mom make me do this? Why are they making me write these stupid journals? I’m never going to look back at these. I could spend an hour and a half so much better in any other way. My mentor sucks and I don’t like him. I don’t like the other kids in the program either. I just want to go home and watch cartoons.",
              "date" : "2017-09-28"},
              {"entry" : "this is journal entry two, i am so sad my sentiment is negative!",
              "date" : "2017-09-29"}]
