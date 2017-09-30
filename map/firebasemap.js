@@ -41,3 +41,35 @@ function makeInfoBox(controlDiv, map) {
   // var infoBox = new makeInfoBox(infoBoxDiv, map);
   // infoBoxDiv.index = 1;
   // map.controls[google.maps.ControlPosition.TOP_CENTER].push(infoBoxDiv);
+function geocodeAddress(geocoder, address) {
+    geocoder.geocode ({address :address}, function(results, status))
+      if (status === 'OK') {
+        resultsMap.setCenter(results[0].geometry.location);
+        var marker = new google.maps.Marker({
+          map: resultsMap,
+          position: results[0].geometry.location
+        });
+      } else {
+        alert('Geocode was not successful for the following reason: ' + status);
+      }
+    });
+  }
+
+}
+
+/**
+ * Adds a click to firebase.
+ * @param {Object} data The data to be added to firebase.
+ *     It contains the lat, lng, sender and timestamp.
+ */
+function addToFirebase(data) {
+  getTimestamp(function(timestamp) {
+    // Add the new timestamp to the record data.
+    data.timestamp = timestamp;
+    var ref = firebase.child('clicks').push(data, function(err) {
+      if (err) {  // Data was not written to firebase.
+        console.log(err);
+      }
+    });
+  });
+}
