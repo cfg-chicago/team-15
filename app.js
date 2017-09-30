@@ -48,6 +48,16 @@ app.get('/index.ejs', function (req, res) {
   res.render('index.ejs', {title: 'Code for Good'})
 })
 
+app.get('/studentgrades.ejs', function (req, res) {
+  res.render('studentgrades.ejs', {title: 'Code for Good'})
+})
+
+app.get('/mentors.ejs', function (req, res) {
+  res.render('mentors.ejs', {title: 'Code for Good'})
+})
+
+
+
 
 
 
