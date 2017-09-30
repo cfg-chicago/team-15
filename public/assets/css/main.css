@@ -3736,15 +3736,13 @@
 			}
 
 		}
-		div.form
+
+		input
 		{
-		    display: block;
-		    text-align: center;
-		}
-		form
-		{
-		    display: inline-block;
-		    margin-left: auto;
-		    margin-right: auto;
-		    text-align: left;
+			margin-left: auto;
+			margin-right: auto;
+		  -moz-border-radius: 15px;
+		 border-radius: 7px;
+		    border:solid 1px white;
+		    padding:5px;
 		}
