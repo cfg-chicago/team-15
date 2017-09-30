@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
 var params = {
   // Get the text from the JSON file.
   text: require('tone.json').text,
-  tones: 'emotion', 'language', 'social'
+  tones: ['emotion', 'language', 'social']
 };
 
 tone_analyzer.tone(params, function(error, response) {
