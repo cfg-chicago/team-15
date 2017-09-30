@@ -12,7 +12,8 @@ var data = {
 function getNameAddress(){
 	name = document.getElementById("tripName");
 	date = document.getElementById("date")
-	
+	address = 
+
 }
 
 /**

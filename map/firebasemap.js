@@ -1,5 +1,19 @@
-function initMap() {
+var firebase = new Firebase('link to firebase');
+
+function initMap(team, month) {
   var map = new google.maps.Map(document.getElementById('map'), {
+    var pins = []
+    var query = firebase.database().ref(team + "map/locations");
+    query.once("value").then(function(snapshot) {
+        var locations = query.value
+        for (i =0; i < locations.length; i++) {
+            var object = JSON.parse(locations[i])
+            var lat_long = geocoderAddress(geocoder, object.address))
+            var marker = new google.maps.Marker({
+                position: lat_long,
+                map: map});
+        }        
+});
     center: {lat: 41.8781, lng: -87.6298},
     zoom: 10,
     styles: [{
@@ -35,6 +49,7 @@ function makeInfoBox(controlDiv, map) {
     controlText.innerText = 'The map shows all clicks made in the last 10 minutes.';
     controlUI.appendChild(controlText);
   }
+<<<<<<< HEAD
 
 
 function geocodeAddress(geocoder, address) {
@@ -53,3 +68,11 @@ function geocodeAddress(geocoder, address) {
 }
 
 
+=======
+  // Create the DIV to hold the control and call the makeInfoBox() constructor
+  // passing in this DIV.
+  // var infoBoxDiv = document.createElement('div');
+  // var infoBox = new makeInfoBox(infoBoxDiv, map);
+  // infoBoxDiv.index = 1;
+  // map.controls[google.maps.ControlPosition.TOP_CENTER].push(infoBoxDiv);
+>>>>>>> 17e079cf5255e01cca4fc4595327ea6f0c15b29f
