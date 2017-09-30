@@ -1,0 +1,4 @@
+curl -X POST --user "{96f3c9de-87a8-40d4-b275-953443eb8c0d}":"{HXp3a5vWALXH}" \
+--header "Content-Type: application/json" \
+--data-binary @Downloads/tone.json \
+"https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2017-09-21"
