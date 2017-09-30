@@ -1,31 +1,28 @@
 {
-    "team-15": {
-        "students": [
-            {
-                "name": "Jacob",
-                "milestones": [
-                    {
-                        "title": "personal logo",
-                        "completed": true,
-                        "image": ""
-                    }
-                ]
-            },
-            {"name": "Zacky"},
-            {"name": "Zach"},
-            {"name": "Pablo"},
-            {"name": "Anya"}],
-        "mentors": [{"name": "Kenneth"}],
-        "map": {
-            "locations": [
-                {
-                    "time_data": "",
-                    "address": "",
-                    "name": ""
-                }
-            ]
-
-        },
-        "media": []
-    },
+  "map" : {
+    "locations" : [ {
+      "address" : "10 S Dearborn St, Chicago, IL 60603",
+      "name" : "large building",
+      "time_data" : "2017-09-29"
+    } ]
+  },
+  "mentors" : [ {
+    "name" : "Kenneth"
+  } ],
+  "students" : [ {
+    "milestones" : [ {
+      "completed" : true,
+      "image" : "",
+      "title" : "personal logo"
+    } ],
+    "name" : "Jacob"
+  }, {
+    "name" : "Zacky"
+  }, {
+    "name" : "Zach"
+  }, {
+    "name" : "Pablo"
+  }, {
+    "name" : "Anya"
+  } ]
 }
