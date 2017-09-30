@@ -24,7 +24,10 @@ function addTeamImages(images){
 		let x = document.createElement('img');
 		x.className = 'new-photo';
 		x.setAttribute('src',images[i]);
-		$('.choose-new-photos')[0].appendChild(x);
+		if(images[i]){
+			$('.choose-new-photos')[0].appendChild(x);
+			console.log(x);
+		}
 	}
 	    $('.new-photo').click(function(e){
 				console.log('clicked');
@@ -47,10 +50,10 @@ function setStudentImages(){
 		}
 	}
 	console.log(selectedImages);
-	var ref = firebase.database().ref('team-15/students/0/media')
-	.on('value',function(snapshot){
+	var ref = firebase.database().ref('team-15/students/0/media');
+	ref.once('value',function(snapshot){
 		var arr = snapshot.val().concat(selectedImages);
 		console.log(arr);
-		firebase.database().ref('team-15/students/0').child('media').set(arr);
+		ref.set(arr);
 	})
 }
