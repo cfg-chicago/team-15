@@ -14,9 +14,11 @@ function initMap() {
   var team = "team-15"
   var query = firebase.database().ref(team + "/map/locations");
   query.once("value").then(function(snapshot) {
-      var locations = query.value
+      var geocoder = new google.maps.Geocoder();
+      var locations = snapshot.val()
       for (i =0; i < locations.length; i++) {
-          var lat_long = geocoderAddress(geocoder, locations[i].address))
+          var lat_long = geocodeAddress(geocoder, locations[i].address)
+          console.log(locations[i].address)
           var marker = new google.maps.Marker({
               position: lat_long,
               map: map});
@@ -27,6 +29,7 @@ function initMap() {
 function geocodeAddress(geocoder, address) {
     geocoder.geocode({'address' :address}, function(results, status){
       if (status === 'OK') {
+          console.log(results[0].geometry.location)
         return results[0].geometry.location
       } else {
         alert('Geocode was not successful for the following reason: ' + status);
