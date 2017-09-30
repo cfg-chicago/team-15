@@ -4,6 +4,8 @@ function initMap(team, month) {
   var map = new google.maps.Map(document.getElementById('map'), {
     var pins = []
     var query = firebase.database().ref(team + "map/locations");
+
+    var jsondData = JSON.parse(data) 
     query.once("value").then(function(snapshot) {
         var locations = query.value
         for (i =0; i < locations.length; i++) {
@@ -55,11 +57,7 @@ function makeInfoBox(controlDiv, map) {
 function geocodeAddress(geocoder, address) {
     geocoder.geocode ({address :address}, function(results, status))
       if (status === 'OK') {
-        resultsMap.setCenter(results[0].geometry.location);
-        var marker = new google.maps.Marker({
-          map: resultsMap,
-          position: results[0].geometry.location
-        });
+        return results[0].geometry.location
       } else {
         alert('Geocode was not successful for the following reason: ' + status);
       }
