@@ -1,4 +1,5 @@
 function initMap() {
+  //initalizes map inside of the web app
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 41.8781, lng: -87.6298},
     zoom: 10,
@@ -23,13 +24,13 @@ function initMap() {
 }
 
 function geocodeAddress(geocoder, address, map) {
+  //takes address gets lat/long puts on map
     geocoder.geocode({'address' :address}, function(results, status){
       if (status === 'OK') {
           console.log({lat: results[0].geometry.location.lat(), lng: results[0].geometry.location.lng()})
           var marker = new google.maps.Marker({
               position: {lat: results[0].geometry.location.lat(), lng: results[0].geometry.location.lng()},
               map: map});
-        // return {lat: results[0].geometry.location.lat(), lng: results[0].geometry.location.lng()};
       } else {
         alert('Geocode was not successful for the following reason: ' + status);
       }
