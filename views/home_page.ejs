@@ -1,5 +1,6 @@
 <html>
     <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <script src="assets/js/firebasehelper.js"></script>
     <head>
         <title><%= title %></title>
         <meta charset="utf-8" />
@@ -7,34 +8,34 @@
         <link rel="stylesheet" href="assets/css/main.css" />
     </head>
 
-<body>
+<body style="background:powderblue;">
     <!-- Header -->
         <header id="header">
             <h1><a href="#">WFF Personal Login</a></h1>
+            <button>Mentor Login</button>
+            <button>Team View</button>
         </header>
     <br>
     <br>
+
     <div class="login-page">
         <div class="form">
-            <form class="register-form">
-                <input id="name" type="text" placeholder="name" style="width: 30%;"/>
-                <input type="password" placeholder="password" style="width: 30%;"/>
-                <button id="clickMe">create</button>
+            <form action="/index.ejs" class="register-form">
+                <br>
+                <input style="background-color:white; width:100%; color:black" id="name" type="text" placeholder="name"/>
+                <br>
+                <input type="password" placeholder="password" style="background-color:white; width:100%; color:black"/>
+                <br>
+                <button id="clickMe">login  </button>
                 <script>
-                    function sayHello() {
-                        console.log(document.getElementById("name"))
-                    }
-                    document.getElementById("clickMe").onclick = sayHello;</script>
-                <p class="message">Already registered? <a href="#">Sign In</a></p>
-            </form>
-            <form class="login-form">
-                <input type="text" placeholder="username" style="width: 30%;"/>
-                <input type="password" placeholder="password" style="width: 30%;"/>
-                <button>login</button>
-                <p class="message">Not registered? <a href="#">Create an account</a></p>
+                    document.getElementById("name").on("value", function() {
+                        console.log("hello")
+                    });</script>
             </form>
         </div>
     </div>
+    <div style="text-align: center;"><IMG SRC="http://www.wffpitchin.org/wp-content/uploads/2017/03/logo-a.png" ALT="image"></div>
+
 
 
 
