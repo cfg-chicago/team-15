@@ -1,0 +1,28 @@
+<style>
+/* Add a black background color to the top navigation */
+		.topnav_unique {
+		    background-color: black;
+		    overflow: hidden;
+		}
+
+		/* Style the links inside the navigation bar */
+		.topnav_unique a {
+		    float: left;
+		    display: block;
+		    color: black;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		    font-size: 17px;
+		}
+</style>
+
+<! — views/partials/nav.ejs →
+<nav class=”navbar navbar-inverse navbar-fixed-top” role=”navigation”>
+ <div class=”container”>
+<ul class=”topnav_unique”>
+ <li><a href=”/”>Home</a></li>
+ <li><a href=”/about”>About</a></li>
+ </ul>
+</div>
+</nav>

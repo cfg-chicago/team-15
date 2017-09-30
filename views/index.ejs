@@ -9,26 +9,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+
 	<body>
 
 		<!-- Header -->
 			<header id="header">
 				<h1><a href="#">Pitch In</a></h1>
-			</header>
-
-			<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="home_page.ejs">Home</a></li>
-					<li><a href="index.ejs">Students</a></li>
-					<li><a href="mentors.ejs">Mentors</a></li>
-					<li><a href="studentgrades.ejs">Grade levels</a></li>
+				<%- include partials/nav.ejs %>
+				<ul class="topnav_unique">
+		 			<li><a href="/home_page">Home</a></li>
+		 			<li><a href="/index">Students</a></li>
+		 			<li><a href="/mentors">Mentors</a></li>
+					<li><a href="/studentgrades">Grade Levels</a></li>
 				</ul>
-			</nav>
+			</header>
 
 			<div style="width: 100%; height: calc(100vh - 45px); margin-top: 3.25em;">
 				<%- include partials/page2.ejs %>
 			</div>
+
 
 
 		<!-- Scripts -->
