@@ -1,19 +1,7 @@
 var firebase = new Firebase('link to firebase');
 
-function initMap(team, month) {
+function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
-    var pins = []
-    var query = firebase.database().ref(team + "map/locations");
-    query.once("value").then(function(snapshot) {
-        var locations = query.value
-        for (i =0; i < locations.length; i++) {
-            var object = JSON.parse(locations[i])
-            var lat_long = geocoderAddress(geocoder, object.address))
-            var marker = new google.maps.Marker({
-                position: lat_long,
-                map: map});
-        }        
-});
     center: {lat: 41.8781, lng: -87.6298},
     zoom: 10,
     styles: [{
@@ -25,6 +13,16 @@ function initMap(team, month) {
     }],
     disableDoubleClickZoom: true
   });
+  var team = "team-15"
+  var query = firebase.database().ref(team + "/map/locations");
+  query.once("value").then(function(snapshot) {
+      var locations = query.value
+      for (i =0; i < locations.length; i++) {
+          var lat_long = geocoderAddress(geocoder, object.address))
+          var marker = new google.maps.Marker({
+              position: lat_long,
+              map: map});
+      }
 }
 
 function makeInfoBox(controlDiv, map) {
