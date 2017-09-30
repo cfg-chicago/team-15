@@ -8,7 +8,13 @@
             },
             { "address" : "5801 S Ellis Ave, Chicago, IL, 60637",
               "name" : "University of Chicago",
-              "time_data" : "2017-09-29"} ]
+              "time_data" : "2017-09-29"},
+            { "address" : "1401 S. Sacramento Dr, Chicago, IL 60623",
+            "name" : "Douglas Park",
+            "time_data" : "2017-09-29"},
+            { "address" : "633 Clark St, Evanston, IL 60208",
+            "name" : "Northwestern",
+            "time_data" : "2017-09-29"} ]
           },
           "mentors" : [ {
             "name" : "Kenneth"
