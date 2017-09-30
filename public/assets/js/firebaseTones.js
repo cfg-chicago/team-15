@@ -18,3 +18,4 @@ function getTones(){
 		$("#tone3")[0].innerHTML = x[x.length-1].tones[0].score + x[x.length-1].tones[0].tone_name
 	});
 }
+getTones()
