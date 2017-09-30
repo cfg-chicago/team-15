@@ -2,6 +2,7 @@
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGdEYeNvtNYUvDOGoMjLqt4r7T8B5S_Lg&callback=initMap">
 </script>
 <script src="assets/js/firebaseImages.js"></script>
+<script src="assets/js/firebaseJournal.js"></script>
 
 <style>
 	.page2-section {border: 1px solid black; width: 50%; height: 50%; position: relative;}
@@ -116,7 +117,20 @@
 	.journal-section {
 		display: flex;
 		flex-direction: row;
-		
+
+	}
+
+	.journal-section > div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#existingEntries {
+		color: black;
+		overflow-y: scroll;
+		margin-left: 1em;
+		margin-top: 3em;
+		padding-right: 1em;
 	}
 
 </style>
@@ -153,11 +167,11 @@
 
 	<div class="page2-section journal-section"><h2>Journal</h2>
 	<div>
-		<textarea rows="16" cols="50" style="margin-top: 3em; margin-left: 1em;"></textarea>
-		<button></button>
+		<textarea rows="16" cols="50" style="margin-top: 3em; margin-left: 1em;" id="journalEntry"></textarea>
+		<button style="margin-left: 1em;" onclick="saveJournal()">Save</button>
 	</div>
 		
-	
+	<div id="existingEntries"></div>
 	</div>
 	<div class="page2-section"><h2>Field Trips</h2>
 		<div id="map"></div></div>
