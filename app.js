@@ -18,7 +18,13 @@ app.get('/', function (req, res) {
   res.render('home_page.ejs', {title: 'Code for Good'})
 })
 
+app.get('/', function (req, res) {
+  res.render('index.ejs', {title: 'Code for Good'})
+})
 
+app.get('/', function (req, res) {
+  res.render('studentgrades.ejs', {title: 'Code for Good'})
+})
 // var params = {
 //   // Get the text from the JSON file.
 //   text: require('tone.json').text,
