@@ -18,6 +18,20 @@ app.get('/', function (req, res) {
   res.render('studentgrades.ejs', {title: 'Code for Good'})
 })
 
+var params = {
+  // Get the text from the JSON file.
+  text: require('tone.json').text,
+  tones: ['emotion', 'language', 'social']
+};
+
+tone_analyzer.tone(params, function(error, response) {
+  if (error)
+    console.log('error:', error);
+  else
+    console.log(JSON.stringify(response, null, 2));
+  }
+);
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
