@@ -16,7 +16,9 @@
     "url": "https://github.com/cfg-chicago/team-15/issues"
   },
   "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "~4.16.1",
     "firebase": "~4.4.0",
-    "express": "~4.16.1"
+    "path": "^0.12.7"
   }
 }
