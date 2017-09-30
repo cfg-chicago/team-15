@@ -17,20 +17,19 @@ function initMap() {
       var geocoder = new google.maps.Geocoder();
       var locations = snapshot.val()
       for (i =0; i < locations.length; i++) {
-          var lat_long = geocodeAddress(geocoder, locations[i].address)
-          console.log(locations[i].address)
-          var marker = new google.maps.Marker({
-              position: lat_long,
-              map: map});
-      }
-  });
+          var lat_long = geocodeAddress(geocoder, locations[i].address, map);
+          console.log(lat_long);
+    }
+});
 }
 
-function geocodeAddress(geocoder, address) {
+function geocodeAddress(geocoder, address, map) {
     geocoder.geocode({'address' :address}, function(results, status){
       if (status === 'OK') {
-          console.log(results[0].geometry.location)
-        return results[0].geometry.location
+          var marker = new google.maps.Marker({
+              position: {lat: results[0].geometry.location.lat(), lng: results[0].geometry.location.lng()},
+              map: map});
+        // return {lat: results[0].geometry.location.lat(), lng: results[0].geometry.location.lng()};
       } else {
         alert('Geocode was not successful for the following reason: ' + status);
       }
