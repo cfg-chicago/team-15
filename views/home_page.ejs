@@ -10,16 +10,21 @@
 <body>
     <!-- Header -->
         <header id="header">
-            <h1><a href="#">Pitch In</a></h1>
+            <h1><a href="#">WFF Personal Login</a></h1>
         </header>
     <br>
     <br>
     <div class="login-page">
         <div class="form">
             <form class="register-form">
-                <input type="text" placeholder="name" style="width: 30%;"/>
+                <input id="name" type="text" placeholder="name" style="width: 30%;"/>
                 <input type="password" placeholder="password" style="width: 30%;"/>
-                <button>create</button>
+                <button id="clickMe">create</button>
+                <script>
+                    function sayHello() {
+                        console.log(document.getElementById("name"))
+                    }
+                    document.getElementById("clickMe").onclick = sayHello;</script>
                 <p class="message">Already registered? <a href="#">Sign In</a></p>
             </form>
             <form class="login-form">
