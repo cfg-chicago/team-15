@@ -11,6 +11,7 @@ function initMap() {
     }],
     disableDoubleClickZoom: true
   });
+
 }
 
 function makeInfoBox(controlDiv, map) {
@@ -35,12 +36,7 @@ function makeInfoBox(controlDiv, map) {
     controlUI.appendChild(controlText);
   }
 
-  // Create the DIV to hold the control and call the makeInfoBox() constructor
-  // passing in this DIV.
-  // var infoBoxDiv = document.createElement('div');
-  // var infoBox = new makeInfoBox(infoBoxDiv, map);
-  // infoBoxDiv.index = 1;
-  // map.controls[google.maps.ControlPosition.TOP_CENTER].push(infoBoxDiv);
+
 function geocodeAddress(geocoder, address) {
     geocoder.geocode ({address :address}, function(results, status))
       if (status === 'OK') {
@@ -54,22 +50,6 @@ function geocodeAddress(geocoder, address) {
       }
     });
   }
-
 }
 
-/**
- * Adds a click to firebase.
- * @param {Object} data The data to be added to firebase.
- *     It contains the lat, lng, sender and timestamp.
- */
-function addToFirebase(data) {
-  getTimestamp(function(timestamp) {
-    // Add the new timestamp to the record data.
-    data.timestamp = timestamp;
-    var ref = firebase.child('clicks').push(data, function(err) {
-      if (err) {  // Data was not written to firebase.
-        console.log(err);
-      }
-    });
-  });
-}
+
