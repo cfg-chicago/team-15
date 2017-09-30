@@ -36,14 +36,14 @@ function geocodeAddress(geocoder, address, map) {
     });
 }
 
-// function addToFirebase(data) {
-//   getTimestamp(function(timestamp) {
-//     // Add the new timestamp to the record data.
-//     data.timestamp = timestamp;
-//     var ref = firebase.child('clicks').push(data, function(err) {
-//       if (err) {  // Data was not written to firebase.
-//         console.log(err);
-//       }
-//     });
-//   });
-// }
+function addToFirebase(data) {
+  getTimestamp(function(timestamp) {
+    // Add the new timestamp to the record data.
+    data.timestamp = timestamp;
+    var ref = firebase.child('clicks').push(data, function(err) {
+      if (err) {  // Data was not written to firebase.
+        console.log(err);
+      }
+    });
+  });
+}
