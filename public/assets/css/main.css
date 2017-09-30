@@ -1589,7 +1589,7 @@
 		color: #c0c2c4;
 	}
 
-	body, input, select, textarea {
+	body, input, select, {
 		font-family: "Signika", sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
@@ -1598,7 +1598,7 @@
 
 		@media screen and (max-width: 1680px) {
 
-			body, input, select, textarea {
+			body, input, select, {
 				font-size: 11pt;
 			}
 
@@ -1606,7 +1606,7 @@
 
 		@media screen and (max-width: 1280px) {
 
-			body, input, select, textarea {
+			body, input, select, {
 				font-size: 11pt;
 			}
 
@@ -1614,7 +1614,7 @@
 
 		@media screen and (max-width: 980px) {
 
-			body, input, select, textarea {
+			body, input, select, {
 				font-size: 12pt;
 			}
 
@@ -1622,7 +1622,7 @@
 
 		@media screen and (max-width: 736px) {
 
-			body, input, select, textarea {
+			body, input, select, {
 				font-size: 12pt;
 			}
 
@@ -1630,7 +1630,7 @@
 
 		@media screen and (max-width: 480px) {
 
-			body, input, select, textarea {
+			body, input, select, {
 				font-size: 12pt;
 			}
 
@@ -1783,7 +1783,7 @@
 		text-align: right;
 	}
 
-	input, select, textarea {
+	input, select, {
 		color: #ffffff;
 	}
 
@@ -2140,7 +2140,7 @@
 	input[type="password"],
 	input[type="email"],
 	select,
-	textarea {
+ {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -2160,7 +2160,7 @@
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
 		select:invalid,
-		textarea:invalid {
+	:invalid {
 			box-shadow: none;
 		}
 
@@ -2203,7 +2203,7 @@
 		height: 2.75em;
 	}
 
-	textarea {
+ {
 		padding: 0.75em 1em;
 	}
 
@@ -2240,7 +2240,7 @@
 	input[type="password"],
 	input[type="email"],
 	select,
-	textarea {
+ {
 		background: rgba(255, 255, 255, 0.075);
 		border-color: rgba(255, 255, 255, 0.15);
 	}
@@ -2249,7 +2249,7 @@
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		select:focus,
-		textarea:focus {
+	:focus {
 			border-color: #062038;
 			box-shadow: 0 0 0 1px #062038;
 		}
@@ -2751,7 +2751,7 @@
 			color: #c1c7cd;
 		}
 
-			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
+			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 {
 				color: #ffffff;
 			}
 
@@ -2864,7 +2864,7 @@
 			.wrapper.style1 input[type="password"],
 			.wrapper.style1 input[type="email"],
 			.wrapper.style1 select,
-			.wrapper.style1 textarea {
+			.wrapper.style1 {
 				background: rgba(255, 255, 255, 0.075);
 				border-color: rgba(255, 255, 255, 0.15);
 			}
@@ -2873,7 +2873,7 @@
 				.wrapper.style1 input[type="password"]:focus,
 				.wrapper.style1 input[type="email"]:focus,
 				.wrapper.style1 select:focus,
-				.wrapper.style1 textarea:focus {
+				.wrapper.style1:focus {
 					border-color: #ffffff;
 					box-shadow: 0 0 0 1px #ffffff;
 				}
@@ -2963,7 +2963,7 @@
 			color: #c0c5c9;
 		}
 
-			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
+			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 {
 				color: #ffffff;
 			}
 
@@ -3076,7 +3076,7 @@
 			.wrapper.style2 input[type="password"],
 			.wrapper.style2 input[type="email"],
 			.wrapper.style2 select,
-			.wrapper.style2 textarea {
+			.wrapper.style2 {
 				background: rgba(255, 255, 255, 0.075);
 				border-color: rgba(255, 255, 255, 0.15);
 			}
@@ -3085,7 +3085,7 @@
 				.wrapper.style2 input[type="password"]:focus,
 				.wrapper.style2 input[type="email"]:focus,
 				.wrapper.style2 select:focus,
-				.wrapper.style2 textarea:focus {
+				.wrapper.style2:focus {
 					border-color: #062038;
 					box-shadow: 0 0 0 1px #062038;
 				}
