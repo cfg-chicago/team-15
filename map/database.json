@@ -50,12 +50,15 @@
               "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FBaseball-Clinic-BBQ-0007-1.jpg?alt=media&token=9197dd5c-caef-4a11-b407-e55fda7be579",
               "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_0177.jpg?alt=media&token=9168588b-3cf6-428d-baaa-8a0e3c5c4552",
               "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_1074.jpg?alt=media&token=53f0565a-68c1-4220-a633-55a3b827caa4",
-              "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FIMG_4613.jpg?alt=media&token=14d68a63-98c0-40af-8511-372d9f6ffb15",
-              "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FIMG_4613.jpg?alt=media&token=14d68a63-98c0-40af-8511-372d9f6ffb15",
               "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FIMG_4613.jpg?alt=media&token=14d68a63-98c0-40af-8511-372d9f6ffb15"],
-          
-          "students" : [ 
+
+          "students" : [
           { "name" : "Jacob",
+            "team": "team-15",
+            "media": ["https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FBaseball-Clinic-BBQ-0007-1.jpg?alt=media&token=9197dd5c-caef-4a11-b407-e55fda7be579",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_0177.jpg?alt=media&token=9168588b-3cf6-428d-baaa-8a0e3c5c4552",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_1074.jpg?alt=media&token=53f0565a-68c1-4220-a633-55a3b827caa4",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FIMG_4613.jpg?alt=media&token=14d68a63-98c0-40af-8511-372d9f6ffb15"],
             "journals": [
             {"entry" : "What a busy day today! I never had a moment’s rest.  The day started with my alarm clock blaring at 7am.  I had to be at the Smith’s house by 8am to baby-sit. I really didn’t want to wake up so early on a Saturday, but I’m saving money to buy a new iPod and couldn’t say no to an all-day babysitting job.",
              "date" : "2017-09-28"},
@@ -63,6 +66,11 @@
              "date" : "2017-09-29"}]
           }, {
             "name" : "Zacky",
+            "team": "team-15",
+            "media": ["https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FBaseball-Clinic-BBQ-0007-1.jpg?alt=media&token=9197dd5c-caef-4a11-b407-e55fda7be579",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_0177.jpg?alt=media&token=9168588b-3cf6-428d-baaa-8a0e3c5c4552",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_1074.jpg?alt=media&token=53f0565a-68c1-4220-a633-55a3b827caa4",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FIMG_4613.jpg?alt=media&token=14d68a63-98c0-40af-8511-372d9f6ffb15"],
             "journals": [
             {"entry" : "Today was great I love the fourth grade",
              "date" : "2017-09-28"},
@@ -70,6 +78,11 @@
              "date" : "2017-09-29"}]
           }, {
             "name" : "Zach",
+            "team": "team-15",
+            "media": ["https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FBaseball-Clinic-BBQ-0007-1.jpg?alt=media&token=9197dd5c-caef-4a11-b407-e55fda7be579",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_0177.jpg?alt=media&token=9168588b-3cf6-428d-baaa-8a0e3c5c4552",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_1074.jpg?alt=media&token=53f0565a-68c1-4220-a633-55a3b827caa4",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FIMG_4613.jpg?alt=media&token=14d68a63-98c0-40af-8511-372d9f6ffb15"],
             "journals": [
             {"entry" : "I love to code but I am very tired",
              "date" : "2017-09-28"},
@@ -77,6 +90,11 @@
              "date" : "2017-09-29"}]
           }, {
             "name" : "Pablo",
+            "team": "team-15",
+            "media": ["https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FBaseball-Clinic-BBQ-0007-1.jpg?alt=media&token=9197dd5c-caef-4a11-b407-e55fda7be579",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_0177.jpg?alt=media&token=9168588b-3cf6-428d-baaa-8a0e3c5c4552",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_1074.jpg?alt=media&token=53f0565a-68c1-4220-a633-55a3b827caa4",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FIMG_4613.jpg?alt=media&token=14d68a63-98c0-40af-8511-372d9f6ffb15"],
             "journals": [
             {"entry" : "this is where you enter a journal text",
              "date" : "2017-09-28"},
@@ -84,6 +102,11 @@
              "date" : "2017-09-29"}]
           }, {
             "name" : "Anya",
+            "team": "team-15",
+            "media": ["https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FBaseball-Clinic-BBQ-0007-1.jpg?alt=media&token=9197dd5c-caef-4a11-b407-e55fda7be579",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_0177.jpg?alt=media&token=9168588b-3cf6-428d-baaa-8a0e3c5c4552",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FDSC_1074.jpg?alt=media&token=53f0565a-68c1-4220-a633-55a3b827caa4",
+            "https://firebasestorage.googleapis.com/v0/b/codeforgood15.appspot.com/o/images%2FIMG_4613.jpg?alt=media&token=14d68a63-98c0-40af-8511-372d9f6ffb15"],
             "journals": [
             {"entry" : "this is where you enter a journal text",
              "date" : "2017-09-28"},
