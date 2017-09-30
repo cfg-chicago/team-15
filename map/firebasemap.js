@@ -1,5 +1,3 @@
-var firebase = new Firebase('link to firebase');
-
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 41.8781, lng: -87.6298},
@@ -18,11 +16,12 @@ function initMap() {
   query.once("value").then(function(snapshot) {
       var locations = query.value
       for (i =0; i < locations.length; i++) {
-          var lat_long = geocoderAddress(geocoder, object.address))
+          var lat_long = geocoderAddress(geocoder, locations[i].address))
           var marker = new google.maps.Marker({
               position: lat_long,
               map: map});
       }
+  });
 }
 
 function geocodeAddress(geocoder, address) {
@@ -34,4 +33,3 @@ function geocodeAddress(geocoder, address) {
       }
     });
 }
-
