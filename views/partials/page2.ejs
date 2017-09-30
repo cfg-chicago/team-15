@@ -1,19 +1,19 @@
    <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGdEYeNvtNYUvDOGoMjLqt4r7T8B5S_Lg&callback=initMap">
-    </script>
+   	function initMap() {
+   		var uluru = {lat: 41.8781, lng: -87.6298};
+   		var map = new google.maps.Map(document.getElementById('map'), {
+   			zoom: 11,
+   			center: uluru
+   		});
+   		var marker = new google.maps.Marker({
+   			position: uluru,
+   			map: map
+   		});
+   	}
+   </script>
+   <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGdEYeNvtNYUvDOGoMjLqt4r7T8B5S_Lg&callback=initMap">
+</script>
 
 <style>
 	.page2-section {border: 1px solid black; width: 50%; height: 50%; position: relative;}
@@ -77,21 +77,53 @@
 		top: 8px;
 	}
 
+	.milestones-container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+		height: calc(100% - 50px);
+		margin-top: 50px;
+	}
+
 	#map {
 		height: 100%;
 	}
+
+	input[type=checkbox]
+	{
+		width: 28px;
+		height: 28px;
+		position: relative;
+		margin: 20px auto;
+		background: #fcfff4;
+		background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+		box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	}
+
+	label {
+		display: inline;
+		color: black;
+	}
+
+	.item {
+		width: 30%;
+		margin-left: 10px;
+
+	}
+
+
 </style>
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; height: 100%; background: white;">
 	<div class="page2-section" id="photo-section">
-	<h2>My Photos</h2>
+		<h2>My Photos</h2>
 		<div class="my-photos">
 			<img src="http://lorempixel.com/200/200"/>
 			<img src="http://lorempixel.com/200/200"/>
 			<img src="http://lorempixel.com/200/200"/>
 			<img src="http://lorempixel.com/200/200"/>
 			<img src="http://lorempixel.com/200/200"/>
-
 		</div>
 		<div class="choose-new-photos">
 			<h2>Choose new photos</h2>
@@ -106,6 +138,41 @@
 
 	<div class="page2-section"><h2>Journal</h2></div>
 	<div class="page2-section"><h2>Field Trips</h2>
-	<div id="map"></div></div>
-	<div class="page2-section"><h2>Milestones</h2></div>
-</div>
+		<div id="map"></div></div>
+		<div class="page2-section"><h2>Milestones</h2>
+			<div class="milestones-container">
+				<div class="item">
+					<input type="checkbox" id="a">
+					<label for="a">Nothing was the same</label>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="a">
+					<label for="a">Nothing was the same</label>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="a">
+					<label for="a">Nothing was the same</label>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="a">
+					<label for="a">Nothing was the same</label>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="a">
+					<label for="a">Nothing was the same</label>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="a">
+					<label for="a">Nothing was the same</label>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="a">
+					<label for="a">Nothing was the same</label>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="a">
+					<label for="a">Nothing was the same</label>
+				</div>
+			</div>
+		</div>
+	</div>
