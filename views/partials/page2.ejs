@@ -1,7 +1,7 @@
 <script src="assets/js/firebasemap.js"></script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGdEYeNvtNYUvDOGoMjLqt4r7T8B5S_Lg&callback=initMap">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGdEYeNvtNYUvDOGoMjLqt4r7T8B5S_Lg&callback=initMap">
 </script>
+<script src="assets/js/firebaseImages.js"></script>
 
 <style>
 	.page2-section {border: 1px solid black; width: 50%; height: 50%; position: relative;}
@@ -51,8 +51,8 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGdEYeNvtNYUvDOGoMjLqt4r7
 		position: relative;
 	}
 
-	.choose-new-photos > button {
-		position: absolute;
+	button {
+		margin: 2px;
 	}
 
 	.choose-new-photos > img {
@@ -117,8 +117,8 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGdEYeNvtNYUvDOGoMjLqt4r7
 </style>
 <script type="text/javascript">
 	     (function defer() {
-		      if (window.jQuery) {
-			          $('.new-photo').click(function(e){
+		if (window.jQuery) {
+			    $('.new-photo').click(function(e){
 				console.log('clicked');
 				const selected = e.target.getAttribute('selected');
 				if(selected !== null){
@@ -150,6 +150,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGdEYeNvtNYUvDOGoMjLqt4r7
 			<img class="new-photo" src="http://lorempixel.com/200/200"/>
 			<img class="new-photo" src="http://lorempixel.com/200/200"/>
 		</div>
+		<button id="savebutton">Save</button>
 	</div>
 
 	<div class="page2-section"><h2>Journal</h2></div>
